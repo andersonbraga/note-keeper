@@ -6,18 +6,29 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatCardModule} from '@angular/material/card'; 
+import { ShellComponent } from './core/shell/shell.component';
+import { ShellModule } from './core/shell/shell.module';
+import { CoreModule } from './core/core.module';
+import { DashboardModule } from './views/dashboard/dashboard.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    
+    CoreModule,
+    DashboardModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
